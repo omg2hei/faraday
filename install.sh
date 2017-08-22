@@ -1,11 +1,12 @@
 #!/bin/bash
-###
+###该脚本使用/bin/bash解释器执行，#!是特殊的表示符，
 ## Faraday Penetration Test IDE
 ## Copyright (C) 2013  Infobyte LLC (http://www.infobytesec.com/)
 ## See the file 'doc/LICENSE' for the license information
 ###
 
 #Check if is it root
+# 判断当前用户是否为Root权限
 if [ $EUID -ne 0 ]; then
  echo "You must be root."
  exit 1
@@ -64,3 +65,7 @@ done
 pip2 install -r requirements.txt
 
 echo "You can now run Faraday, enjoy!"
+
+# 从开源项目学编程
+# 参考链接
+# Linux脚本开头#!/bin/bash和#!/bin/sh是什么意思以及区别 http://www.cnblogs.com/EasonJim/p/6850319.html 
